@@ -1,0 +1,32 @@
+//color
+$color_white: #fff;
+$color_black: #000;
+$color_border: #333;
+//layer
+$layer_modal: 32;
+$layer_nav: 16;
+$layer_main: 0;
+//Media Query
+@mixin tab {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+@mixin sp {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin pc {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+//animation
+@mixin animation_opacity {
+  transition: opacity .2s ease;
+  cursor: pointer;
+  &:hover{
+    opacity: .5;
+  }
+}
