@@ -1,23 +1,26 @@
+# Build output
 dist
 
+# Dependencies
+node_modules
+
 # Logs
-logs
 *.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
-# Bower dependency directory (https://bower.io/)
-bower_components
-
-# Dependency directories
-node_modules/
-
-# Optional npm cache directory
-.npm
-
-# dotenv environment variables file
+# Environment variables
 .env
+.env.local
+.env.*.local
 
-# jetbrains
+# Editor
 .idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS
+.DS_Store
+Thumbs.db
