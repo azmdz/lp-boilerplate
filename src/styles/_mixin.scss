@@ -1,0 +1,47 @@
+// ----------------------------------------
+// Colors
+// ----------------------------------------
+$color-white: #fff;
+$color-black: #000;
+$color-border: #e5e7eb; // gray-200
+
+// ----------------------------------------
+// Z-index layers
+// ----------------------------------------
+$layer-modal: 32;
+$layer-nav: 16;
+$layer-main: 0;
+
+// ----------------------------------------
+// Media queries
+// (Tailwindのブレークポイントと合わせた値)
+// ----------------------------------------
+@mixin md {
+  @media screen and (width >= 768px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (width >= 1024px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (width >= 1280px) {
+    @content;
+  }
+}
+
+// ----------------------------------------
+// Utilities
+// ----------------------------------------
+@mixin animation-opacity {
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
