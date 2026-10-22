@@ -1,0 +1,8 @@
+{
+  "title": "Title",
+  "description": "サイトの説明文をここに記述します。",
+  "url": "https://example.com/",
+  "siteName": "Site Name",
+  "ogImage": "https://example.com/assets/img/ogp.png",
+  "twitterCard": "summary_large_image"
+}
