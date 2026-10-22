@@ -1,17 +1,12 @@
-module.exports = {
-  plugins: [
-    'stylelint-scss',
-  ],
-  extends: [
-    'stylelint-config-recommended',
-    'stylelint-config-recommended-scss',
-  ],
+export default {
+  extends: ['stylelint-config-standard-scss'],
   rules: {
-    'font-family-no-missing-generic-family-keyword': true,
-    'declaration-block-no-shorthand-property-overrides': true,
-    'declaration-block-trailing-semicolon': 'always',
-    'selector-pseudo-element-colon-notation': 'double',
-    'selector-max-empty-lines': 0,
-    'max-empty-lines': 1,
+    'at-rule-no-unknown': null,
+    'scss/at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: ['apply', 'layer', 'theme', 'source', 'utility', 'variant'],
+      },
+    ],
   },
 };

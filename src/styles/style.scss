@@ -1,0 +1,34 @@
+@use 'mixin' as *;
+
+// ----------------------------------------
+// Global
+// ----------------------------------------
+img {
+  @apply w-full h-auto;
+}
+
+// ----------------------------------------
+// Layout
+// ----------------------------------------
+.header {
+  @apply border-b border-gray-200 px-4 py-4;
+}
+
+.main {
+  @apply block px-4 py-8;
+}
+
+.footer {
+  @apply border-t border-gray-200 px-4 py-4;
+}
+
+// ----------------------------------------
+// Components (SCSS例)
+// ----------------------------------------
+.title {
+  @apply text-center text-xl font-bold;
+}
+
+.image {
+  @apply w-12;
+}
